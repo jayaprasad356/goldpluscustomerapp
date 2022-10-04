@@ -5,8 +5,13 @@
       <map>
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/custom_progress_dialog.xml" value="0.1185" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg.xml" value="0.177" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_radius_bg.xml" value="0.153" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_delivery.xml" value="0.20416666666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_quotation.xml" value="0.25" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_rate_cut.xml" value="0.22" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/rings_layout.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
