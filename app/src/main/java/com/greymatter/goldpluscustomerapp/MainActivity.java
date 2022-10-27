@@ -2,6 +2,7 @@ package com.greymatter.goldpluscustomerapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
@@ -9,15 +10,18 @@ import android.os.Bundle;
 import android.widget.GridLayout;
 
 import com.greymatter.goldpluscustomerapp.adapter.RingAdapter;
+import com.greymatter.goldpluscustomerapp.adapter.RingCategoryAdapter;
 import com.greymatter.goldpluscustomerapp.helper.Session;
 import com.greymatter.goldpluscustomerapp.model.Rings;
+import com.greymatter.goldpluscustomerapp.model.RingsCategory;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerview;
+    RecyclerView recyclerview, categoryRecyclerview;
     RingAdapter ringAdapter;
+    RingCategoryAdapter ringCategoryAdapter;
     Activity activity;
     Session session;
 
@@ -31,15 +35,43 @@ public class MainActivity extends AppCompatActivity {
 
 
         recyclerview = findViewById(R.id.recyclerview);
+        categoryRecyclerview = findViewById(R.id.categoryRecyclerview);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(activity,3);
         recyclerview.setLayoutManager(gridLayoutManager);
 
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,true);
+        categoryRecyclerview.setLayoutManager(linearLayoutManager);
+
 
         rings();
+        categoryRings();
 
 
 
+
+    }
+
+    private void categoryRings() {
+
+
+        ArrayList<RingsCategory> ringsCategories = new ArrayList<>();
+        RingsCategory rings1 = new RingsCategory("","Bangles");
+        RingsCategory rings2 = new RingsCategory("","Rings");
+        RingsCategory rings3 = new RingsCategory("","Bangles");
+        RingsCategory rings4 = new RingsCategory("","Bangles");
+        RingsCategory rings5 = new RingsCategory("","Bangles");
+
+
+        ringsCategories.add(rings1);
+        ringsCategories.add(rings2);
+        ringsCategories.add(rings3);
+        ringsCategories.add(rings4);
+        ringsCategories.add(rings5);
+
+
+        ringCategoryAdapter = new RingCategoryAdapter(MainActivity.this,ringsCategories);
+        categoryRecyclerview.setAdapter(ringCategoryAdapter);
 
     }
 

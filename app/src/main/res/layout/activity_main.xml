@@ -24,14 +24,35 @@
     </RelativeLayout>
 
 
+    <LinearLayout
+        android:layout_below="@+id/rltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltoolbar"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_10sdp" />
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rltoolbar"
-        android:padding="@dimen/_10sdp"
         android:layout_centerVertical="true"
-        />
+        android:padding="@dimen/_10sdp" />
+
+
+
+    </LinearLayout>
 
 
 
