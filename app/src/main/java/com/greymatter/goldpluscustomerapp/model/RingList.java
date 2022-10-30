@@ -1,13 +1,24 @@
 package com.greymatter.goldpluscustomerapp.model;
 
-public class Rings {
+
+import java.io.Serializable;
+
+public class RingList implements Serializable {
     String id,ring_img,weight,size;
+    private boolean isChecked = false;
 
-    public Rings() {
-
+    public boolean isChecked() {
+        return isChecked;
     }
 
-    public Rings(String id, String ring_img, String weight, String size) {
+    public void setChecked(boolean checked) {
+        isChecked = checked;
+    }
+
+    public RingList() {
+    }
+
+    public RingList(String id, String ring_img, String weight, String size) {
         this.id = id;
         this.ring_img = ring_img;
         this.weight = weight;
