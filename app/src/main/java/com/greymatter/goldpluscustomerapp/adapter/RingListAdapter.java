@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.card.MaterialCardView;
 import com.greymatter.goldpluscustomerapp.R;
 import com.greymatter.goldpluscustomerapp.model.RingList;
@@ -72,6 +73,10 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
             cardView.setStrokeWidth(employee.isChecked() ? 15 : 4);
             tvWeight.setText(employee.getWeight());
             tvSize.setText(employee.getSize());
+            Glide.with(context).load(employee.getRing_img()).placeholder(R.drawable.ring_pic).into(imgRing);
+
+
+
 
 
 
