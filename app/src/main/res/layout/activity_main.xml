@@ -18,8 +18,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Gold Plus"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageButton
+            android:id="@+id/ibCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/white"
+
+            />
 
     </RelativeLayout>
 

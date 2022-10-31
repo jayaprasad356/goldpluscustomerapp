@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuotationActivity">
-    
-    
-    
+    tools:context=".FinalActivity">
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:padding="@dimen/_14sdp"
         android:id="@+id/rltoolbar"
         >
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,79 +42,79 @@
 
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-
-
-        <TextView
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="wrap_content"
-            android:text="Gold Rate"
-            android:textSize="@dimen/_10sdp"
-            android:textColor="@color/primary"
-            android:background="@color/primary_light"
-            android:padding="@dimen/_4sdp"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-
-            <TextView
-                android:layout_width="@dimen/_60sdp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5166"
-                android:textSize="@dimen/_12sdp"
-                android:textColor="@color/primary"
-                android:background="@color/primary_light"
-                android:padding="@dimen/_4sdp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/_1sdp"
-                />
+                android:orientation="vertical"
+                >
 
 
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginLeft="@dimen/_1sdp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+                <TextView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Gold Rate"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/primary"
+                    android:background="@color/primary_light"
+                    android:padding="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:text="5166"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/primary"
+                    android:background="@color/primary_light"
+                    android:padding="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    />
 
 
 
-        <TextView
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="wrap_content"
-            android:text="Rate"
-            android:textSize="@dimen/_10sdp"
-            android:textColor="@color/primary"
-            android:background="@color/primary_light"
-            android:padding="@dimen/_4sdp"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-
-            <TextView
-                android:layout_width="@dimen/_60sdp"
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5017.66"
-                android:textSize="@dimen/_12sdp"
-                android:textColor="@color/primary"
-                android:background="@color/primary_light"
-                android:padding="@dimen/_4sdp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/_1sdp"
-                />
+                android:orientation="vertical"
+                >
 
 
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/primary"
+                    android:background="@color/primary_light"
+                    android:padding="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:text="5017.66"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/primary"
+                    android:background="@color/primary_light"
+                    android:padding="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    />
+
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
@@ -145,14 +145,14 @@
 
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Shop Name :-"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Name :-"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
 
 
             <TextView
@@ -282,119 +282,119 @@
 
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="right"
-                android:padding="@dimen/_6sdp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Price:  17.570  x 5017.48"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-                    />
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price:  17.570  x 5017.48"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  88157.12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="   =  88157.12"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SGST 1.5%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  1308.05"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
 
 
-                    />
 
-
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="right"
-                android:padding="@dimen/_6sdp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="SGST 1.5%"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-                    />
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GST 1.5%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  1308.05"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="   =  1308.05"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
 
-                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Margin Charges: 6 x 59"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  354.00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
 
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="right"
-                android:padding="@dimen/_6sdp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="GST 1.5%"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="   =  1308.05"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-
-                    />
+                        />
 
 
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="right"
-                android:padding="@dimen/_6sdp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Margin Charges: 6 x 59"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="   =  354.00"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-
-                    />
-
-
-
-            </LinearLayout>
+                </LinearLayout>
 
 
                 <LinearLayout

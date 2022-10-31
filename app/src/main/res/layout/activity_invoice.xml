@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoiceActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:padding="@dimen/_14sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gold Plus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary_light"
+        android:layout_below="@+id/rltoolbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invoice : 26758"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Date:May 25,2022"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_8sdp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                >
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Name :-"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATAN Jewellers\nMadurai,Tamilnadu\nSTD: +043145672"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/_4sdp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                >
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buyer"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AK Thangamaigai\nMadurai,Tamilnadu\nSTD: +043145672"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/_4sdp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Qty"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:textAlignment="center"
+                android:background="@drawable/organge_stroke_bg1"
+                />
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg1"
+                />
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="HSN/SAC"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg1"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Rate"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg1"
+                />
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Per"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg1"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Amount"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg2"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:gravity="center"
+                android:background="@drawable/organge_stroke_bg"
+                />
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Rings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg"
+                />
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="7133"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="50.1748"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg"
+                />
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="gm"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="₹ 8881521"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg4"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:gravity="center"
+                android:background="@drawable/organge_stroke_bg_6"
+                />
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg_6"
+                />
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg_6"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="50"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg_6"
+                />
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg_6"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="300"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/organge_stroke_bg_7"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/_20sdp"
+                >
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGST 1.5%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  ₹ 88157.12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GST 1.5%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  ₹ 1308.05"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SGST 9%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  ₹ 1308.05"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GST 9%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  ₹ 1308.05"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBTOTAL"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   =  ₹ 354.00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="right"
+
+                    >
+
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:dividerColor="@color/black"
+                        android:layout_marginLeft="@dimen/_100sdp"
+
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price =  ₹91127.22"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        />
+
+
+
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:dividerColor="@color/black"
+                        android:layout_marginLeft="@dimen/_100sdp"
+
+                        />
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginStart="@dimen/_20sdp"
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/primary"
+        android:text="Download Invoice"
+        android:textAllCaps="false" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

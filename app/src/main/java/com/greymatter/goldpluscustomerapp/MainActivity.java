@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
@@ -29,6 +30,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
     private RingsCategoryAdapter adapter;
     private RingListAdapter ringListAdapter;
     TextView tvItem_count;
+    ImageButton ibCart;
 
     Activity activity;
     Session session;
@@ -48,11 +50,19 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
 
         btnProceed = findViewById(R.id.btnProceed);
         tvItem_count = findViewById(R.id.tvItem_count);
+        ibCart = findViewById(R.id.ibCart);
 
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(activity,ProceedActivity.class);
+                startActivity(intent);
+            }
+        });
+        ibCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity,OdersActivity.class);
                 startActivity(intent);
             }
         });
