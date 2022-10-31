@@ -22,14 +22,15 @@
             android:textSize="@dimen/_12sdp" />
 
 
-        <ImageButton
-            android:id="@+id/ibCart"
+        <TextView
+            android:id="@+id/tvViewOder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_shopping_cart_24"
             android:layout_alignParentRight="true"
-            android:backgroundTint="@color/white"
-
+            android:text="View Order"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
             />
 
     </RelativeLayout>

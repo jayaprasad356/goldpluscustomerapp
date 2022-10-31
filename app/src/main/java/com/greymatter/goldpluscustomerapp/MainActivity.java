@@ -29,8 +29,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
     private ArrayList<RingList> ringLists = new ArrayList<>();
     private RingsCategoryAdapter adapter;
     private RingListAdapter ringListAdapter;
-    TextView tvItem_count;
-    ImageButton ibCart;
+    TextView tvItem_count,tvViewOder;
 
     Activity activity;
     Session session;
@@ -50,7 +49,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
 
         btnProceed = findViewById(R.id.btnProceed);
         tvItem_count = findViewById(R.id.tvItem_count);
-        ibCart = findViewById(R.id.ibCart);
+        tvViewOder = findViewById(R.id.tvViewOder);
 
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +58,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ibCart.setOnClickListener(new View.OnClickListener() {
+        tvViewOder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(activity,OdersActivity.class);

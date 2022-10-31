@@ -55,7 +55,7 @@ public class SignatureActivity extends AppCompatActivity {
         mSignaturePad.setOnSignedListener(new SignaturePad.OnSignedListener() {
             @Override
             public void onStartSigning() {
-                Toast.makeText(SignatureActivity.this, "OnStartSigning", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(SignatureActivity.this, "OnStartSigning", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -88,25 +88,31 @@ public class SignatureActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-
-                Bitmap signatureBitmap = mSignaturePad.getSignatureBitmap();
-                if (addJpgSignatureToGallery(signatureBitmap)) {
-
-                    Intent intent = new Intent(SignatureActivity.this,InvoiceActivity.class);
-                    startActivity(intent);
+                Intent intent = new Intent(SignatureActivity.this,InvoiceActivity.class);
+                startActivity(intent);
 
 
 
-                    Toast.makeText(SignatureActivity.this, "Signature saved into the Gallery", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(SignatureActivity.this, "Unable to store the signature", Toast.LENGTH_SHORT).show();
-                }
-                if (addSvgSignatureToGallery(mSignaturePad.getSignatureSvg())) {
-                    Toast.makeText(SignatureActivity.this, "SVG Signature saved into the Gallery", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(SignatureActivity.this, "Unable to store the SVG signature", Toast.LENGTH_SHORT).show();
-                }
+//
+//
+//                Bitmap signatureBitmap = mSignaturePad.getSignatureBitmap();
+//                if (addJpgSignatureToGallery(signatureBitmap)) {
+//
+//                    Intent intent = new Intent(SignatureActivity.this,InvoiceActivity.class);
+//                    startActivity(intent);
+//
+//
+//
+//                    Toast.makeText(SignatureActivity.this, "Signature saved into the Gallery", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    Toast.makeText(SignatureActivity.this, "Unable to store the signature", Toast.LENGTH_SHORT).show();
+//                }
+//                if (addSvgSignatureToGallery(mSignaturePad.getSignatureSvg())) {
+//                    Toast.makeText(SignatureActivity.this, "SVG Signature saved into the Gallery", Toast.LENGTH_SHORT).show();
+//
+//                } else {
+//                    Toast.makeText(SignatureActivity.this, "Unable to store the SVG signature", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }

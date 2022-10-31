@@ -70,7 +70,7 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
 
         void bind(final RingList employee) {
           //  imageView.setVisibility(employee.isChecked() ? View.VISIBLE : View.GONE);
-            cardView.setStrokeWidth(employee.isChecked() ? 15 : 4);
+            cardView.setStrokeWidth(employee.isChecked() ? 10 : 4);
             tvWeight.setText(employee.getWeight());
             tvSize.setText(employee.getSize());
             Glide.with(context).load(employee.getRing_img()).placeholder(R.drawable.ring_pic).into(imgRing);
@@ -85,7 +85,7 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
                 public void onClick(View view) {
                     employee.setChecked(!employee.isChecked());
                    // imageView.setVisibility(employee.isChecked() ? View.VISIBLE : View.GONE);
-                    cardView.setStrokeWidth(employee.isChecked() ? 15 : 4);
+                    cardView.setStrokeWidth(employee.isChecked() ? 10 : 4);
 
                 }
             });
