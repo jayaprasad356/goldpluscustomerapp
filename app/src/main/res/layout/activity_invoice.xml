@@ -26,12 +26,20 @@
 
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rltoolbar"
+        android:background="@color/primary_light"
+
+        >
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/primary_light"
-        android:layout_below="@+id/rltoolbar"
         >
 
         <RelativeLayout
@@ -142,6 +150,10 @@
 
 
         </RelativeLayout>
+
+
+
+
 
 
 
@@ -374,18 +386,6 @@
 
 
         </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -612,10 +612,9 @@
 
 
 
-
-
-
     </LinearLayout>
+
+</ScrollView>
 
 
     <Button
@@ -626,6 +625,18 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/primary"
         android:text="Download Invoice"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_marginStart="@dimen/_20sdp"
+        android:id="@+id/btnViewoders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/primary"
+        android:text="View Oders"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/_10sdp"
         android:textAllCaps="false" />
 
 
