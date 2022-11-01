@@ -29,7 +29,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
     private ArrayList<RingList> ringLists = new ArrayList<>();
     private RingsCategoryAdapter adapter;
     private RingListAdapter ringListAdapter;
-    TextView tvItem_count,tvViewOder;
+    public static TextView tvItem_count,tvViewOder,tvGrossWeight;
 
     Activity activity;
     Session session;
@@ -50,7 +50,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
         btnProceed = findViewById(R.id.btnProceed);
         tvItem_count = findViewById(R.id.tvItem_count);
         tvViewOder = findViewById(R.id.tvViewOder);
-
+        tvGrossWeight = findViewById(R.id.tvGrossWeight);
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,9 +77,6 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
         categoryRecyclerview.setLayoutManager(linearLayoutManager);
         adapter = new RingsCategoryAdapter(this, ringCategories);
         categoryRecyclerview.setAdapter(adapter);
-
-
-
 
 
 
@@ -134,16 +131,12 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
 
 
     private void rings() {
-
-
-
-
         ArrayList<RingList> ringLists = new ArrayList<>();
         RingList rings1 = new RingList("","","1","1");
-        RingList rings2 = new RingList("1","","22 g","25");
-        RingList rings3 = new RingList("1","","22 g","25");
-        RingList rings4 = new RingList("1","","22 g","25");
-        RingList rings5 = new RingList("1","","22 g","25");
+        RingList rings2 = new RingList("1","","22","25");
+        RingList rings3 = new RingList("1","","22","25");
+        RingList rings4 = new RingList("1","","22","25");
+        RingList rings5 = new RingList("1","","22","25");
 
         ringLists.add(rings1);
         ringLists.add(rings2);
@@ -154,15 +147,5 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
 
         ringListAdapter = new RingListAdapter(this,ringLists);
         recyclerview.setAdapter(ringListAdapter);
-
-
-
-
     }
-
-
-
-
-
-
 }
