@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp"
-                    android:background="@drawable/organge_stroke_bg"
+                    android:background="@drawable/organge_stroke_ring"
                     >
 
                     <TextView
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp"
-                    android:background="@drawable/organge_stroke_bg"
+                    android:background="@drawable/organge_stroke_ring"
                     >
 
                     <TextView

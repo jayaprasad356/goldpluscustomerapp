@@ -14,18 +14,25 @@
         android:theme="@style/Theme.GoldPlusCustomerApp"
         tools:targetApi="31">
         <activity
-            android:name=".MultiSelectionActivity"
-            android:exported="true" >
-
-
+            android:name=".OdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvoiceActivity"
+            android:exported="true">
 
         </activity>
         <activity
-            android:name=".ProceedActivity"
+            android:name=".FinalActivity"
             android:exported="false" />
         <activity
-            android:name=".DeliveryActivity"
+            android:name=".SignatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiSelectionActivity"
             android:exported="true" />
+        <activity
+            android:name=".ProceedActivity"
+            android:exported="false" />
         <activity
             android:name=".RateCutActivity"
             android:exported="true" />
@@ -34,17 +41,16 @@
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
     </application>

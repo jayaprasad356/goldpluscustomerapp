@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
@@ -28,7 +29,7 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
     private ArrayList<RingList> ringLists = new ArrayList<>();
     private RingsCategoryAdapter adapter;
     private RingListAdapter ringListAdapter;
-    TextView tvItem_count;
+    TextView tvItem_count,tvViewOder;
 
     Activity activity;
     Session session;
@@ -48,11 +49,19 @@ public class MainActivity<ItemClickListener> extends AppCompatActivity {
 
         btnProceed = findViewById(R.id.btnProceed);
         tvItem_count = findViewById(R.id.tvItem_count);
+        tvViewOder = findViewById(R.id.tvViewOder);
 
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(activity,ProceedActivity.class);
+                startActivity(intent);
+            }
+        });
+        tvViewOder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity,OdersActivity.class);
                 startActivity(intent);
             }
         });

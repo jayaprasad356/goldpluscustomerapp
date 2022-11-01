@@ -18,8 +18,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Gold Plus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tvViewOder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="View Order"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="@dimen/_12sdp"
-            android:textColor="@color/white" />
+            />
 
     </RelativeLayout>
 
