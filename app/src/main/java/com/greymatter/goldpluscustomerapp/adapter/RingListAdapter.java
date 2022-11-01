@@ -15,8 +15,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.card.MaterialCardView;
+import com.greymatter.goldpluscustomerapp.MainActivity;
 import com.greymatter.goldpluscustomerapp.R;
 import com.greymatter.goldpluscustomerapp.model.RingList;
+import com.greymatter.goldpluscustomerapp.model.SelectedRingList;
 
 import java.util.ArrayList;
 
@@ -24,6 +26,8 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
 
     private Context context;
     private ArrayList<RingList> employees;
+    public static int counter = 0;
+    public static int WeightCounter =0 ,tapCount = 0;
 
     public RingListAdapter(Context context, ArrayList<RingList> employees) {
         this.context = context;
@@ -46,7 +50,6 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
     @Override
     public void onBindViewHolder(@NonNull MultiViewHolder multiViewHolder, int position) {
         multiViewHolder.bind(employees.get(position));
-
     }
 
     @Override
@@ -68,25 +71,26 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
             cardView = itemView.findViewById(R.id.card);
         }
 
-        void bind(final RingList employee) {
+        void bind(final RingList employee) throws IndexOutOfBoundsException{
           //  imageView.setVisibility(employee.isChecked() ? View.VISIBLE : View.GONE);
             cardView.setStrokeWidth(employee.isChecked() ? 10 : 4);
             tvWeight.setText(employee.getWeight());
             tvSize.setText(employee.getSize());
             Glide.with(context).load(employee.getRing_img()).placeholder(R.drawable.ring_pic).into(imgRing);
-
-
-
-
-
-
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     employee.setChecked(!employee.isChecked());
                    // imageView.setVisibility(employee.isChecked() ? View.VISIBLE : View.GONE);
                     cardView.setStrokeWidth(employee.isChecked() ? 10 : 4);
-
+                    if(employee.isChecked()) {
+                        counter = counter+1;
+                        MainActivity.tvItem_count.setText(String.valueOf(counter));{}
+                    }
+                    if(!employee.isChecked()) {
+                        counter = counter -1 ;
+                        MainActivity.tvItem_count.setText(String.valueOf(counter));
+                    }
                 }
             });
         }
@@ -95,7 +99,6 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
     public ArrayList<RingList> getAll() {
         return employees;
     }
-
     public ArrayList<RingList> getSelected() {
         ArrayList<RingList> selected = new ArrayList<>();
         for (int i = 0; i < employees.size(); i++) {
@@ -104,5 +107,8 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
             }
         }
         return selected;
+
     }
+
+
 }
