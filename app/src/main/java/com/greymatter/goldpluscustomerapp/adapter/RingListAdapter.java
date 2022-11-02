@@ -81,15 +81,29 @@ public class RingListAdapter extends RecyclerView.Adapter<RingListAdapter.MultiV
                 @Override
                 public void onClick(View view) {
                     employee.setChecked(!employee.isChecked());
+                    int total_weight = 0;
                    // imageView.setVisibility(employee.isChecked() ? View.VISIBLE : View.GONE);
                     cardView.setStrokeWidth(employee.isChecked() ? 10 : 4);
                     if(employee.isChecked()) {
                         counter = counter+1;
-                        MainActivity.tvItem_count.setText(String.valueOf(counter));{}
+                        MainActivity.tvItem_count.setText(("Selected: ").concat(String.valueOf(counter)));
+                        for(int i =0 ;i<employees.size();i++) {
+                            if(employees.get(i).isChecked()) {
+                                total_weight = total_weight +Integer.parseInt(employees.get(i).getWeight());
+                            }
+                        }
+                        MainActivity.tvGrossWeight.setText(String.valueOf(total_weight).concat(" grams"));
+
                     }
                     if(!employee.isChecked()) {
                         counter = counter -1 ;
                         MainActivity.tvItem_count.setText(String.valueOf(counter));
+                        for(int i =0 ;i<employees.size();i++) {
+                            if(employees.get(i).isChecked()) {
+                                total_weight = Integer.parseInt(employees.get(i).getWeight()) - total_weight;
+                            }
+                        }
+                        MainActivity.tvGrossWeight.setText(String.valueOf(total_weight));
                     }
                 }
             });
