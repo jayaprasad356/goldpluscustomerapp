@@ -156,12 +156,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Rate"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/_150sdp"
         android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_150sdp"
         android:backgroundTint="@color/primary"
-        android:textAllCaps="false"
-        />
+        android:text="Book Rate"
+        android:textAllCaps="false" />
 
 </RelativeLayout>
