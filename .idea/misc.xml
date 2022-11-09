@@ -3,38 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/activity_multi_selection.xml" value="0.17552083333333332" />
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/activity_proceed.xml" value="0.15925925925925927" />
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/activity_rate_cut.xml" value="0.17552083333333332" />
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/activity_signature.xml" value="0.17552083333333332" />
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/rings_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/GoldPlusCustomerApp/app/src/main/res/layout/select_rings_layout.xml" value="0.3333333333333333" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable-v24/category_onClick_bg.xml" value="0.1" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable-v24/category_onclick_bg.xml" value="0.1" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/category_bg.xml" value="0.1" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/custom_progress_dialog.xml" value="0.1185" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg.xml" value="0.177" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg1.xml" value="0.1625" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg2.xml" value="0.1625" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg4.xml" value="0.1625" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg5.xml" value="0.1625" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg_6.xml" value="0.1625" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_bg_7.xml" value="0.1625" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_radius_bg.xml" value="0.153" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/drawable/organge_stroke_ring.xml" value="0.1625" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout-land/activity_delivery.xml" value="0.334375" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_delivery.xml" value="0.13636363636363635" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_final.xml" value="0.19010416666666666" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_invoice.xml" value="0.16311399443929564" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_delivery.xml" value="0.20416666666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_multi_selection.xml" value="0.20416666666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_multiple_selection.xml" value="0.19010416666666666" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_oders.xml" value="0.20416666666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_proceed.xml" value="0.20416666666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_quotation.xml" value="0.25" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_rate_cut.xml" value="0.22" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_signature.xml" value="0.20416666666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/activity_single_selection.xml" value="0.19010416666666666" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/item_employee.xml" value="0.20416666666666666" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/orders_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/quotation_layout.xml" value="0.38589211618257263" />
         <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/rings_category_layout.xml" value="0.33" />
-        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/rings_layout.xml" value="0.67" />
+        <entry key="..\:/goldpluscustomerapp/app/src/main/res/layout/rings_layout.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

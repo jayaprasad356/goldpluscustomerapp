@@ -72,8 +72,10 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="clear_pad"
+            android:text="Clear Pad"
             android:enabled="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
             android:layout_margin="@dimen/_10sdp"
             />
 
@@ -82,9 +84,10 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="save_signature"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
             android:layout_margin="@dimen/_10sdp"
-            android:background="@color/primary"
             android:enabled="false"
             />
 

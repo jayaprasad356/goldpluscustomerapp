@@ -97,7 +97,7 @@
                 android:id="@+id/tvItem_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pieces : 6"
+                android:text="Pieces : 0"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 

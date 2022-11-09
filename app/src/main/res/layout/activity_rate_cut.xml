@@ -154,13 +154,14 @@
 
 
     <Button
+        android:id="@+id/btnConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/_150sdp"
         android:backgroundTint="@color/primary"
-        android:text="Book Rate"
+        android:text="Confirm Rate"
         android:textAllCaps="false" />
 
 </RelativeLayout>

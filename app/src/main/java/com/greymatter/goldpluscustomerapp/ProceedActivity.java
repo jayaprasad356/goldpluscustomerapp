@@ -43,14 +43,14 @@ public class ProceedActivity extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity,QuotationActivity.class);
+                Intent intent = new Intent(activity,RateCutActivity.class);
                 startActivity(intent);
             }
         });
 
         recyclerview = findViewById(R.id.recyclerview);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(activity,3);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(activity,5);
         recyclerview.setLayoutManager(gridLayoutManager);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,true);
@@ -71,6 +71,11 @@ public class ProceedActivity extends AppCompatActivity {
         SelectedRingList rings4 = new SelectedRingList("1","","22 g","25");
         SelectedRingList rings5 = new SelectedRingList("1","","22 g","25");
 
+        selectedRingLists.add(rings1);
+        selectedRingLists.add(rings2);
+        selectedRingLists.add(rings3);
+        selectedRingLists.add(rings4);
+        selectedRingLists.add(rings5);
         selectedRingLists.add(rings1);
         selectedRingLists.add(rings2);
         selectedRingLists.add(rings3);

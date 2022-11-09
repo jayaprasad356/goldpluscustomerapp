@@ -19,9 +19,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gold Plus"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/white" />
+            android:text="Selected Products"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
 
     </RelativeLayout>
 

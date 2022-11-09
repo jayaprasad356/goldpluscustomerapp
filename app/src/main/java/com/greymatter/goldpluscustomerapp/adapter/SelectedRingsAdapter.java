@@ -36,7 +36,7 @@ public class SelectedRingsAdapter extends RecyclerView.Adapter<RecyclerView.View
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(activity).inflate(R.layout.rings_layout, parent, false);
+        View view = LayoutInflater.from(activity).inflate(R.layout.select_rings_layout, parent, false);
         return new ExploreItemHolder(view);
     }
 
